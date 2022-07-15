@@ -225,8 +225,8 @@
 }
 
 :root {
-  --start-x: -10%;
-  --end-x: 75%;
+  --start-x: -15%;
+  --end-x: 85%;
   --start-y: -7px;
   --end-y: 90%;
 }
@@ -236,21 +236,38 @@
     left: 10%;
     top: -7px;
   }
+  22% {
+    transform: rotate(0deg);
+    
+  }
   25% {
     left: var(--end-x);
     top: var(--start-y);
+    transform: rotate(90deg);
   }
   50% {
     top: var(--end-y);
     left: var(--end-x);
+    transform: rotate(90deg);
+  }
+  53% {
+    transform: rotate(0deg);
+  }
+  74% {
+    transform: rotate(0deg);
   }
   75% {
     left: var(--start-x);
     top: var(--end-y);
+    transform: rotate(90deg);
   }
   90% {
     top: var(--start-y);
     left: var(--start-x);
+    transform: rotate(90deg);
+  }
+  91% {
+    transform: rotate(0deg);
   }
 }
 @keyframes button-13-bottom {
@@ -258,20 +275,37 @@
     right: 20%;
     bottom: -7px;
   }
+  24% {
+    transform: rotate(0deg);
+  }
   25% {
     right: var(--end-x);
     bottom: var(--start-y);
+    transform: rotate(90deg);
   }
   50% {
     right: var(--end-x);
     bottom: var(--end-y);
+    transform: rotate(90deg);
+    
+  }
+  51% {
+    transform: rotate(0deg);
+  }
+  74% {
+    transform: rotate(0deg);
   }
   75% {
     bottom: var(--end-y);
-    right: var(--start-x);
+    right: var(--start-x); 
+    transform: rotate(90deg);
   }
   90% {
     right: var(--start-x);
-    bottom: var(--start-y)
+    bottom: var(--start-y);
+    transform: rotate(90deg);
+  }
+  91% {
+    transform: rotate(0deg);
   }
 }
